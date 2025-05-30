@@ -1,0 +1,351 @@
+@media (max-width: 1596px) {
+    .main_menu {
+        column-gap: 15px;
+
+        li a {
+            font-size: 16px;
+        }
+    }
+
+    .header {
+        .main_btn {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        height: auto;
+    }
+
+    .section_01 {
+        background: none;
+        padding-bottom: 32px;
+        padding-top: 100px;
+
+        h1 {
+            font-size: 48px;
+        }
+    }
+
+    .custom_card {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .info_box .avatars {
+        margin-left: auto;
+    }
+
+    .custom_select_wrapper {
+        margin-left: auto;
+        margin-right: 43px;
+    }
+
+    .burger {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .header {
+        .main_btn {
+            display: none;
+        }
+    }
+
+    .menu_box {
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        background-color: #fff;
+        padding-left: 30px;
+        padding-top: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease;
+        z-index: 1;
+        box-shadow: 0 0 20px #000;
+
+        .main_menu {
+            display: block;
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &.active {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .custom_card img {
+        display: none;
+    }
+
+    .section_02 {
+        padding: 32px 0;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .section_02 .card {
+        margin-bottom: 20px;
+    }
+
+    .some_nav {
+        margin-bottom: 20px;
+
+        .point {
+            font-size: 32px;
+            margin-bottom: 22px;
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .picture_section_02 {
+        margin-bottom: 20px;
+    }
+
+    .some_place {
+        margin-bottom: 20px;
+    }
+
+    .tab-btn {
+        min-height: 64px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        border-radius: 100px;
+        border: 1px solid #000;
+    }
+
+    .tab-content.active {
+        flex-wrap: wrap;
+    }
+
+    .section_04 h2 {
+        font-size: 32px;
+    }
+
+    .section_04 {
+        .row {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .section_04 .col-lg-4 img {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .section_05 {
+        padding: 32px 0;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            font-family: "Inter";
+        }
+
+        p {
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    .partners_box {
+        margin-top: 30px;
+    }
+
+    .section_06 {
+        padding: 32px 0;
+    }
+
+    .pre_footer {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .section_06 h2 {
+        font-size: 32px;
+    }
+
+    .section_06 .news_box {
+        h3 {
+            padding: 0 20px;
+        }
+
+        p {
+            padding: 0 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .pre_footer h2 {
+        font-size: 32px;
+    }
+
+    .social_list {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer_footer .politic_menu {
+        justify-content: center;
+    }
+
+    .footer_footer .copyright {
+        text-align: center;
+    }
+
+    .other_section_01 h1 {
+        font-size: 32px;
+    }
+
+    .pagination li a {
+        width: 54px;
+        height: 54px;
+    }
+
+    .other_section_01 {
+        .tabs-content {
+            margin-bottom: 32px;
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .breadcrumbs {
+        margin: 24px 0;
+        padding-top: 80px;
+    }
+
+    .other_section_01 {
+        padding-top: 0;
+    }
+
+    .service {
+        h2 {
+            font-size: 16px;
+
+            span {
+                color: #000;
+            }
+        }
+
+        .card {
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+    }
+    .other_section_01 {
+        .info_box {
+            display: block;
+            margin-top: 40px;
+            .quant {
+                font-size: 32px;
+                margin-bottom: 22px;
+            }
+        }
+    }
+    .other_03 {
+        .card {
+            margin-bottom: 20px;
+        }
+    }
+    .test {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 320px;
+        height: 320px;
+        img {
+            max-width: 90%;
+        }
+        
+    }
+    .school {
+        .col-lg-5.d-flex.justify-content-around   {
+            display: block !important;
+            img {
+                max-width:  48%;
+                width: 100%;
+            }
+        }
+    }
+    .cooperation {
+        padding-top: 140px;
+    }
+    .coop_section {
+        .coop_card {
+            margin-bottom: 20px;
+        }
+    }
+    .article_section {
+        h1 {
+            font-size: 32px;
+            order: 4;
+            margin-bottom: 40px;
+        }
+
+        .col-lg-12 {
+            display: flex;
+            flex-direction: column-reverse;
+            p:nth-child(3) {
+                order: 2;
+            }
+            .date {
+                order: 3;
+            }
+        }
+        .share {
+            margin-bottom: 40px;
+        }
+    }
+}

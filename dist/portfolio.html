@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медичний 3D друк</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-6">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 menu_box ">
+                    <ul class="nav main_menu">
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Соціальний проект</a></li>
+                        <li><a href="#">Школа 3D друку</a></li>
+                        <li><a href="#">Наші контакти</a></li>
+                    </ul>
+                    <!-- HTML структура кастомного селекта -->
+                </div>
+                <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                    <div class="custom_select_wrapper">
+                        <div class="custom_select">
+                            <div class="select_trigger">
+                                <span>EN</span>
+                            </div>
+                            <div class="options_container">
+                                <div class="select_option selected" data-value="en">EN</div>
+                                <div class="select_option" data-value="ua">UA</div>
+                            </div>
+                        </div>
+                        <!-- Скрытый select для работы с формами -->
+                        <select class="hidden_select" name="language">
+                            <option value="en" selected>EN</option>
+                            <option value="ua">UA</option>
+                        </select>
+                    </div>
+                    <a href="#" data-toggle="modal" data-target="#exampleModal" class="main_btn">консультація</a>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav">
+                    <li><a href="#">Головна</a></li>
+                    <li>•</li>
+                    <li>Наші роботи</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="other_section_01" id="other_section_01">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Наші <span>роботи</span></h1>
+            </div>
+            <div class="col-lg-12">
+                <div class="tabs-container w-100">
+                    <!-- Навигация табов -->
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="tab1">ДЕКОРАТИВНО ЗАХИСНІ НАКЛАДКИ</button>
+                        <button class="tab-btn" data-tab="tab2">ІНДИВІДУАЛЬНІ ОРТЕЗИ</button>
+                        <button class="tab-btn" data-tab="tab3">АНАТОМІЧНІ 3D МОДЕЛІ</button>
+                        <button class="tab-btn" data-tab="tab4">АДАПТИВНІ ПРИСТРОЇ</button>
+                    </div>
+                    <!-- Содержимое табов -->
+                    <div class="tabs-content">
+                        <!-- Таб 1 -->
+                        <div id="tab1" class="tab-content active">
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                             <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                             <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Таб 2 -->
+                        <div id="tab2" class="tab-content">
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Таб 3 -->
+                        <div id="tab3" class="tab-content">
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Таб 4 -->
+                        <div id="tab4" class="tab-content">
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez3.png" data-fancybox="gallery">
+                                    <img src="img/protez3.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez1.png" data-fancybox="gallery">
+                                    <img src="img/protez1.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez2.png" data-fancybox="gallery">
+                                    <img src="img/protez2.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="img/protez4.png" data-fancybox="gallery">
+                                    <img src="img/protez4.png" alt="Декоративно захисні накладки" class="tab-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section 4  -->
+<section class="section_04" id="section_04">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2><span>Перші в Україні.</span> Працюємо для вас
+                    з 2024 року.</h2>
+                <p>Ми — піонери у своїй справі. З моменту заснування у 2024 році впроваджуємо унікальні рішення, яких не було на ринку раніше. Обираючи нас — ви обираєте перевірений досвід, новаторський підхід і якість, якій довіряють.</p>
+                <a href="#" class="main_btn">Підтримати проєкт</a>
+            </div>
+            <div class="col-lg-4">
+                <img src="img/ball.png" alt="Ball">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer" id="footer">
+    <div class="container pre_footer">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2><span>Зв’яжіться з нами</span> — відповімо протягом 24 годин</h2>
+            </div>
+            <div class="col-lg-6">
+                <p>Маєте питання щодо 3D-друку, замовлення виробу, партнерства чи навчання? Напишіть нам — ми відкриті до співпраці та завжди раді новим контактам.</p>
+                <div class="contacts">
+                    <a href="tel:">Номер телефону</a>
+                    <a href="mailto:">електронна адреса</a>
+                </div>
+                <ul class="nav social_list">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center">
+                <form class="site_form" action="">
+                    <input type="text" placeholder="Ім’я">
+                    <input type="text" placeholder="Номер телефону">
+                    <input type="submit" class="main_btn" value="Надіслати">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="img/footer_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <p>Виготовляємо анатомічні моделі, імпланти та захисні накладки на протези під потреби пацієнтів.
+                                Застосовуємо сучасні технології — працюємо на межі медицини й інженерії.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="footer_list">
+                                <li><a href="#">Послуги</a></li>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Соціальний проект</a></li>
+                                <li><a href="#">Наші контакти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 widgets_box">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <h3>Спеціалізовані рішення</h3>
+                            <ul class="footer_list">
+                                <li><a href="#">Регульовані куксоприймачі</a></li>
+                                <li><a href="#">Індивідуальні ортези</a></li>
+                                <li><a href="#">Анатомічні 3D-моделі органів</a></li>
+                                <li><a href="#">Реабілітаційні тренажери</a></li>
+                                <li><a href="#">Адаптивні побутові пристрої</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>3D-друк на замовлення</h3>
+                            <ul class="footer_list">
+                                <li><a href="#">FDM та SLA-друк</a></li>
+                                <li><a href="#">3D-сканування і моделювання</a></li>
+                                <li><a href="#">Прототипи, макети, індивідуальні аксесуари</a></li>
+                                <li><a href="#">Виготовлення пошкоджених деталей</a></li>
+                                <li><a href="#">Персоналізовані рішення для виробництва або бізнесу</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="#" class="main_btn">консультація</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="nav politic_menu">
+                        <li><a href="#">Оферта</a></li>
+                        <li><a href="#">Політика конфіденційності</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="copyright">© 2025 Charity Foundation. All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Modal -->
+<div class="custom-modal" id="exampleModal">
+    <div class="custom-modal-dialog">
+        <div class="custom-modal-content">
+            <span class="custom-modal-close">Закрити</span>
+            <div class="custom-modal-body">
+                <h2><span>Зв’яжіться з нами</span> — відповімо протягом 24 годин</h2>
+                <form class="site_form" action="">
+                    <input type="text" placeholder="Ім’я">
+                    <input type="text" placeholder="Номер телефону">
+                    <div class="d-flex align-items-center">
+                        <input type="checkbox" id="rights">
+                        <label for="rights">Даю згоду на обробку персональних даних</label>
+                    </div>
+                    <input type="submit" class="main_btn" value="Надіслати">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
