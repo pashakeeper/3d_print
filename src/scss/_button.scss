@@ -1,0 +1,20 @@
+.main_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D40000;
+  color: white;
+  height: 64px;
+  border-radius: 16px;
+  text-transform: uppercase;
+  font-family: "Inter",sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all .5s ease;
+  &:hover {
+    filter: brightness(2);
+    text-decoration: none;
+    color: white;
+
+  }
+}
