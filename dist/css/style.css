@@ -188,7 +188,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 16px;
-}*/
+    }*/
 ::root {
   --wp--preset--font-size--medium: 18px !important;
   --3dd-header-height: 54px;
@@ -2029,6 +2029,56 @@ img[src="https://med3druk.com/wp-content/uploads/2025/08/24.png"] {
   visibility: hidden;
   object-fit: cover !important;
   border-radius: 16px;
+}
+
+.bid_modal input[type=checkbox] {
+  margin-right: 16px;
+  width: 18px;
+  height: 18px;
+}
+.bid_modal label {
+  font-weight: 600;
+  font-size: 16px;
+}
+.bid_modal label span {
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 20px;
+}
+.bid_modal select {
+  height: 64px;
+  border-radius: 16px;
+  border: 1px solid #000;
+  padding-left: 40px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  outline: 0;
+  margin-bottom: 8px;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("../img/select-arrow.svg") no-repeat right 48px center/12px auto;
+  padding-right: 30px;
+}
+.bid_modal .sub_text {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.bid_modal input[type=file] {
+  display: none;
+}
+.bid_modal .fiels_control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 992px) {
