@@ -72,7 +72,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="nav">
-                    <li><a href="#">Головна</a></li>
+                    <li><a data-toggle="modal" data-target="#bid_Modal" href="#">Головна</a></li>
                     <li>•</li>
                     <li><a href="#">Статті</a></li>
                     <li>•</li>
@@ -86,8 +86,22 @@
 
 
 
+<section class="colab_section" id="colab_section">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+</section>
 
-<div class="custom-modal-12 bid_modal" id="bid_Modal">
+
+
+
+
+
+
+
+<div class="custom-modal bid_modal" id="bid_Modal">
     <div class="custom-modal-dialog">
         <div class="custom-modal-content">
             <span class="custom-modal-close">Закрити</span>
@@ -122,11 +136,11 @@
                     <div class="sub_text">(обов’язкове тільки для персонального замовлення або якщо обрано певні категорії)</div>
                     <div class="fiels_control">
                      <input type="file" id="file">
-                     <label for="file">Прикріпити фото протеза</label>
+                     <label for="file">Прикріпити фото протеза <i>+</i></label>
                      <input type="file" id="file2">
-                     <label for="file2">Медичні документи</label>
+                     <label for="file2">Медичні документи <i>+</i></label>
                      <input type="file" id="file3">
-                     <label for="file3">Довідки</label>
+                     <label for="file3">Довідки <i>+</i></label>
                  </div>
                  <div class="form-row-title">4. Контактна інформація:</div>
                  <div class="input_controls">

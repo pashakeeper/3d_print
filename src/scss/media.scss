@@ -15,6 +15,23 @@
 }
 
 @media (max-width: 991px) {
+    .bid_modal {
+        label {
+            flex-wrap: wrap;
+        }
+        .fiels_control {
+            flex-wrap: wrap;
+            label {
+                flex: 0 0 100%;
+            }
+        }
+        .input_controls {
+            flex-wrap: wrap;
+            input {
+                flex: 0 0 100%;
+            }
+        }
+    }
     .header {
         height: auto;
     }

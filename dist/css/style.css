@@ -2080,6 +2080,40 @@ img[src="https://med3druk.com/wp-content/uploads/2025/08/24.png"] {
   align-items: center;
   justify-content: space-between;
 }
+.bid_modal .fiels_control label {
+  flex: 0 0 calc(33.33% - 10px);
+  width: 100%;
+  padding: 0 40px;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: #000;
+  border-radius: 16px;
+  height: 64px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bid_modal .fiels_control label:hover {
+  background: #D40000;
+}
+.bid_modal .fiels_control label i {
+  margin-left: auto;
+  color: white;
+  font-style: normal;
+}
+.bid_modal .input_controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.bid_modal .input_controls input {
+  flex: 0 0 calc(33.33% - 10px);
+}
+.bid_modal .d-flex.align-items-center {
+  margin-bottom: 20px;
+}
 
 @media (min-width: 992px) {
   ::root {

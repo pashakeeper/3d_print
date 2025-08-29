@@ -10,6 +10,21 @@
   }
 }
 @media (max-width: 991px) {
+  .bid_modal label {
+    flex-wrap: wrap;
+  }
+  .bid_modal .fiels_control {
+    flex-wrap: wrap;
+  }
+  .bid_modal .fiels_control label {
+    flex: 0 0 100%;
+  }
+  .bid_modal .input_controls {
+    flex-wrap: wrap;
+  }
+  .bid_modal .input_controls input {
+    flex: 0 0 100%;
+  }
   .header {
     height: auto;
   }
