@@ -18,7 +18,7 @@ $(document).ready(function() {
             
         });
     });
-    Fancybox.bind('[data-fancybox="gallery"]', {
+    Fancybox.bind('[data-fancybox]', {
         // Your custom options for a specific gallery
     });
 
@@ -43,6 +43,29 @@ $(document).ready(function() {
         if ($(e.target).is('.custom-modal')) {
             $(this).fadeOut(200);
         }
+    });
+
+    $('.page-template-page-services-php .categories-filter a').on('click', function(e){
+        e.preventDefault();
+        let category = $(this).data('category');
+
+        $('.page-template-page-services-php .categories-filter a').removeClass('active');
+        $(this).addClass('active');
+
+        $.ajax({
+            url: '/wp-admin/admin-ajax.php', // WP сам знает admin-ajax.php
+            type: 'POST',
+            data: {
+                action: 'filter_services',
+                category: category,
+            },
+            beforeSend: function(){
+                $('#services-list').html('<p>Завантаження...</p>');
+            },
+            success: function(res){
+                $('#services-list').html(res);
+            }
+        });
     });
 });
 
@@ -138,5 +161,24 @@ function createCustomSelect(containerId, options, defaultValue) {
     initCustomSelects();
     // Открытие модального окна
 
-
 }
+// CF7: показать модалку "спасибо" после успешной отправки и закрыть текущую
+document.addEventListener('wpcf7mailsent', function (event) {
+  // если нужно реагировать только на конкретную форму — раскомментируй строку ниже:
+  // if (String(event.detail.contactFormId) !== '3547') return;
+
+  const $form = $(event.target);
+  const $currentModal = $form.closest('.custom-modal'); // то модальное, где была форма
+
+  // закрываем текущее модальное (если открыто), затем открываем спасибо
+  if ($currentModal.length) {
+    $currentModal.fadeOut(200, function () {
+      $('#thanks_Modal').fadeIn(200);
+    });
+  } else {
+    $('#thanks_Modal').fadeIn(200);
+  }
+
+  // по желанию: сбросить форму
+  try { $form[0].reset(); } catch (e) {}
+}, false);

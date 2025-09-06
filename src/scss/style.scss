@@ -1974,6 +1974,19 @@ $border-color_4: white;
         }
         .d-flex.align-items-center {
             margin-bottom: 20px;
+            label {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .thanks_modal {
+        .custom-modal-body {
+            img {
+                margin-right: 40px;
+                max-width: 319px;
+                width: 100%;
+            }
         }
     }
 

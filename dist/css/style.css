@@ -2114,6 +2114,15 @@ img[src="https://med3druk.com/wp-content/uploads/2025/08/24.png"] {
 .bid_modal .d-flex.align-items-center {
   margin-bottom: 20px;
 }
+.bid_modal .d-flex.align-items-center label {
+  margin-bottom: 0;
+}
+
+.thanks_modal .custom-modal-body img {
+  margin-right: 40px;
+  max-width: 319px;
+  width: 100%;
+}
 
 @media (min-width: 992px) {
   ::root {
